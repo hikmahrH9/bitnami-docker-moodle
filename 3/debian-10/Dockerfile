@@ -34,7 +34,7 @@ RUN /opt/bitnami/scripts/php/postunpack.sh
 RUN /opt/bitnami/scripts/apache-modphp/postunpack.sh
 RUN /opt/bitnami/scripts/moodle/postunpack.sh
 RUN /opt/bitnami/scripts/mysql-client/postunpack.sh
-ENV ALLOW_EMPTY_PASSWORD="no" \
+ENV ALLOW_EMPTY_PASSWORD="yes" \
     APACHE_ENABLE_CUSTOM_PORTS="no" \
     APACHE_HTTPS_PORT_NUMBER="" \
     APACHE_HTTP_PORT_NUMBER="" \
